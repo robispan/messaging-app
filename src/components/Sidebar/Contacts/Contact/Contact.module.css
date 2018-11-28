@@ -1,0 +1,22 @@
+.Contact {
+    height: 70px;
+    padding-left: 30px;
+    background: #fff;
+    border-bottom: 1px solid rgba(221, 210, 192, 0.555);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.Contact:hover {
+    background-color: rgba(134, 130, 119, 0.048);
+    cursor: pointer;
+}
+
+.active {
+    background-color: rgba(134, 130, 119, 0.109);
+}
+
+.active:hover {
+    background-color: rgba(134, 130, 119, 0.109);
+}

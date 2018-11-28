@@ -1,0 +1,29 @@
+@import '../../../styles/colors.scss';
+
+.Input {
+    height: 60px;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    background: $input-bg;
+    @media(max-width: 700px) {
+        padding: 0 30px;
+    }
+    @media(max-width: 500px) {
+        padding: 0;
+    }
+}
+
+.Input input {
+    display: block;
+    flex: 1;
+    height: 40px;
+    border-radius: 25px;
+    margin: 20px 10px;
+    padding: 3px 30px;
+    border: none;
+    outline: none;
+    color: rgb(77, 77, 77);
+    font-family: inherit;
+    font-size: 1em;
+}

@@ -1,0 +1,12 @@
+.Sidebar {
+    height: 100%;
+    width: 35%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    z-index: 500;
+}
+
+.User {
+    margin-left: 10px;
+}

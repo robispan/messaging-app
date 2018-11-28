@@ -1,0 +1,17 @@
+.Chat {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.Contact {
+    margin-left: 10px;
+}
+
+.noChat {
+    margin: auto;
+    width: 200px;
+    text-align: center;
+    font-size: 1.2em;
+}

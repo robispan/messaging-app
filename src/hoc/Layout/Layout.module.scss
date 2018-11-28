@@ -1,0 +1,26 @@
+@import '../../styles/colors.scss';
+
+.Layout {
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    min-width: 385px;
+    box-shadow: 
+        0 1px 1px 0 rgba(0, 0, 0, 0.06), 
+        0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    background: $input-bg;
+}
+
+@media (min-width: 1450px) {
+    .Layout {
+        position: absolute;
+        border-radius: 3px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1400px;
+        height: calc(100% - 80px);
+        min-height: 500px;
+        overflow: hidden;
+    }
+}
