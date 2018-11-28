@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 
 import Sidebar from '../../components/Sidebar/Sidebar';
 import Chat from '../../components/Chat/Chat';
@@ -112,23 +111,4 @@ class Main extends Component {
     };
 }
 
-const mapStateToProps = state => {
-    return {
-        chatBgrnd: state.chatBackground,
-        user: state.user,
-        contId: state.currentContactKey,
-        contNm: state.currentContactName,
-        currentChatId: state.currentChatId,
-        msgs: state.messages,
-        ldng: state.loading,
-        err: state.error
-    };
-};
-
-const mapDispatchToProps = dispatch => {
-    return {
-        onContactSelect: (contactKey) => dispatch({ type: 'CONTACT_SELECT', ctId: contactKey })
-    };
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(withErrorHandler(Main, axios));
+export default withErrorHandler(Main, axios);
