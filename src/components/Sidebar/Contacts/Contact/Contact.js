@@ -1,6 +1,6 @@
 import React from 'react';
 
-import classes from './Contact.module.css';
+import classes from './Contact.module.scss';
 
 const contact = (props) => {
     const classList = [classes.Contact];

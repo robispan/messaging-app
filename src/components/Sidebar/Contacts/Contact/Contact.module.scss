@@ -1,3 +1,5 @@
+@import '../../../../styles/colors.scss';
+
 .Contact {
     height: 70px;
     padding-left: 30px;
@@ -9,14 +11,11 @@
 }
 
 .Contact:hover {
-    background-color: rgba(134, 130, 119, 0.048);
+    background-color: $sidebar-active;
     cursor: pointer;
 }
 
-.active {
-    background-color: rgba(134, 130, 119, 0.109);
-}
-
+.active,
 .active:hover {
-    background-color: rgba(134, 130, 119, 0.109);
+    background-color: $sidebar-active;
 }
